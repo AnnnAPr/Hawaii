@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hawaii</title>
+    <style>
+      body {
+        background-color: skyblue;
+        /* border: 5px black solid;  */
+      }
+      h1 {
+        color: black;
+        font-size: 50px;
+        
+      }
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+      }
+      .column img{
+        opacity: 1;
+        cursor: zoom-in;
+        padding: 5px;
+      }
+      .column img:hover{
+        opacity: 1;
+        transform: scale(1.1);
+        transition: 0.5s;
+      }
+      column img:active{
+        opacity: 1;
+      }
+
+      /* Expanding Img text */
+      #imgtext {
+        position: absolute;
+        left: 750px;
+        padding-top: 100px;
+        font-size: 28px;
+        color: yellow; 
+        font-weight: bold;
+      }
+      #imgtext :hover {
+        color: #ADE3BD; 
+        cursor: wait; 
+      }
+      a {
+        position: absolute;
+        font-size: 30px;
+        left: 45%;
+        top: 100px;
+        
+      }
+    </style>
+
+    <script>
+      function openbig(imgs) {
+        var expandImg = document.getElementById("expand");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+
+             
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align:center">Magical Hawaii</h1>
+    <a href="HawaiiAboutTab.html">About Hawaii</a>
+    <div class = "row">
+      <div id = "imgtext"></div> <!--Here will be displayed title of picture-->
+
+      <div class = "column">
+        <img src = "https://raw.githubusercontent.com/AnnnAPr/Hawaii/main/Parallax/Images/SecretBeach.jpg" alt = "Secret Beach, Oahu" style = "width: 25%" onclick = "openbig(this);">
+        <img src = "https://raw.githubusercontent.com/AnnnAPr/Hawaii/main/Parallax/Images/Mountains.jpg" alt = "Mountains, Oahu" style = "width: 25%" onclick = "openbig(this);">
+        <img src = "https://raw.githubusercontent.com/AnnnAPr/Hawaii/main/Parallax/Images/Pineapples.jpg" alt = "How pineapples grow, Oahu" style = "width: 25%" onclick = "openbig(this);">
+        <img src = "https://raw.githubusercontent.com/AnnnAPr/Hawaii/main/Parallax/Images/KuaBay.jpg" alt = "Kua Bay, Hawaii Island" style = "width: 25%" onclick = "openbig(this);">
+        <img src = "https://raw.githubusercontent.com/AnnnAPr/Hawaii/main/Parallax/Images/Lanikai.jpg" alt = "Lanikai, Oahu" style = "width: 25%" onclick = "openbig(this);">
+        <img src = "https://raw.githubusercontent.com/AnnnAPr/Hawaii/main/Parallax/Images/PalmsAndSky.jpg" alt = "Palms and Sky, Oahu" style = "width: 25%" onclick = "openbig(this);">
+        <img src = "https://raw.githubusercontent.com/AnnnAPr/Hawaii/main/Parallax/Images/Coconuts.jpg" alt = "Coconuts, Oahu" style = "width: 25%" onclick = "openbig(this);">
+        <img src = "https://raw.githubusercontent.com/AnnnAPr/Hawaii/main/Parallax/Images/UnderPalms.jpg" alt = "Under Palms, Oahu" style = "width: 25%" onclick = "openbig(this);">
+      </div>
+
+      <div class = "column">
+        <span onclick="this.parentElement.style.display = 'none'"></span>
+        <img id = "expand" style = "width: 150%; height: 60%; margin-top: 15px; margin-left: 120px;">
+      </div>
+
+    </div>
+
+  </body>
+</html>
