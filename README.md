@@ -5,3 +5,6 @@ https://htmlpreview.github.io/?https://github.com/AnnnAPr/Hawaii/blob/main/Paral
 
 ### Hawaii pictures gallery (tabs).
 https://htmlpreview.github.io/?https://raw.githubusercontent.com/AnnnAPr/Hawaii/main/TabGallery/HawaiiTabGallery.html
+
+### Hawaii pictures ("about" page)
+https://htmlpreview.github.io/?https://github.com/AnnnAPr/Hawaii/blob/main/TabGallery/HawaiiAboutTab.html
